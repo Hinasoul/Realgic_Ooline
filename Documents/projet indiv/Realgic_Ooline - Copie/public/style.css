@@ -1,0 +1,381 @@
+/*POUR TOUTE LA PAGE*/
+
+*{
+	margin:0;    /*enlever padding et margin pour occuper jusqu'au haut de la page*/
+	padding:0;
+}
+
+a{
+	text-decoration:none; /*enlever la deco des a*/
+}
+li{
+    text-decoration: none ;
+}
+
+ul{
+	list-style-type:none; /*enlever les points des listes*/
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #3b323d;
+} 
+
+/*LE TEMPLATE, LE MENU*/
+
+#bandeau{
+    min-height: 100px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+	justify-content:space-between;
+    align-items: center;
+    font-family: cursive, verdana, sans-serif;
+    border-bottom: 5px solid  #aa10bd;
+    font-weight:bold;
+}
+#logo{
+    padding: 0 40px;
+    color: white;
+    font-family: arial, verdana, sans-serif;
+   /* background-color: red;*/
+}
+#TwoOO{
+    color: #aa10bd;
+}
+
+#menu_principal{
+   /*background-color: green;*/
+    padding-right: 40px;
+    margin-right: 100px;
+}
+
+#menu_principal ul li{
+    /*background-color: yellow;*/
+    display: inline-flex;
+    font-size: 22px;
+    padding-right: 2px;
+    padding-left: 10px;
+}
+#menu_principal ul li a{
+    color: white;
+}
+
+#menu_principal ul li a:hover{
+   color: #aa10bd;
+}
+#menu_connexion{
+    /*background-color: purple;*/
+  
+}
+
+.boutons_menu{
+    font-family: cursive, verdana, sans-serif;
+    padding: 10px;
+    margin-left:10px;
+    margin-right:10px;
+    font-size: 22px;
+    background-color: #478bf9;
+    color: white;
+    border-radius:6px;
+    box-shadow:1px 1px 3px #aaa;
+    border:none;
+
+}
+
+#menu_connexion a:hover{
+    background-color: #aa10bd;
+}
+
+/* LA PAGE DE CONNEXION */ 
+
+#page_formulaire_connexion{
+    /*background-image: url("/public/imgs/background.png");
+    background-repeat:no-repeat;
+    width: 100%;
+    min-height:626px;*/
+    
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    columns: 2;
+    max-width: 100%;
+    margin:0 auto;
+   
+}
+#imgConnection img{
+   background-color: red;
+   max-width: 100%;
+}
+#formulaire_connexion{
+    font-family: cursive, verdana, sans-serif;
+    line-height:3em;
+    
+}
+#blockNicknamePassSubmit{
+	padding-top: 30%;
+    
+}
+.nicknamePassSubmit{
+      
+}
+.boutons_connection{
+    font-family: cursive, verdana, sans-serif;
+    padding: 5px;
+    /*margin-left:70px;*/
+    font-size: 22px;
+    background-color: #478bf9;
+    color: white;
+    border-radius:6px;
+    box-shadow:1px 1px 3px #aaa;
+    border:none;
+}
+
+.inputConnection{
+    padding: 10px;
+}
+
+/*PAGE EVENTS*/
+
+#events_page{
+    width: 100%;
+    min-height:600px;
+}
+
+#blockPutEvent{
+   min-height: 200px;
+   background-color: black;
+   -webkit-columns: 3;
+   -moz-columns: 3;
+   columns: 3;
+   max-width: 80%;
+   margin:10px auto;
+   border: 3px groove  #aa10bd;
+}
+.titleContent{
+    padding: 10px;
+}
+.titleContent input{
+    padding:10px;
+    width: 50%;
+    
+}
+.titleContent textarea{
+  margin-top: 10px;
+  margin-bottom: 10px;
+   
+}
+
+#publish{
+    font-family: cursive, verdana, sans-serif;
+    padding: 5px;
+    font-size: 22px;
+    background-color: #478bf9;
+    color: white;
+    border-radius:6px;
+    box-shadow:1px 1px 3px #aaa;
+    border:none;
+}
+.events_page_contenu{
+    max-width: 60%;
+    min-height: 100px;
+    margin:10px auto;
+	font:bold 13px Arial;
+	background:#f5f5f5;
+	color:#555;
+	border-radius:2px;
+	width:80%;
+	border:1px solid #ccc;
+    box-shadow:1px 1px 3px #999;
+    line-height: 30px;
+
+}
+
+.events_page_contenu h1{
+    color: black;
+    text-decoration: underline;
+    font-family: "Courier New", Courier, monospace
+}
+
+.events_page_contenu p{
+font-family: Verdana, Geneva, sans-serif
+}
+
+#revenir{
+    font-family: arial;
+    color: #478bf9;
+}
+.boutonEffacer{
+    padding: 5px;
+    background-color: #ec00b7;
+    color: white;
+    border-radius:6px;
+    box-shadow:1px 1px 3px #aaa;
+    border:none;
+}
+
+#boutonModifier{
+    padding: 5px;
+    background-color: #0fe996;
+    color: white;
+    border-radius:6px;
+    box-shadow:1px 1px 3px #aaa;
+    border:none;
+}
+#boutonDetails{
+    padding: 5px;
+    background-color: #aa10bd;
+    color: white;
+    border-radius:6px;
+    box-shadow:1px 1px 3px #aaa;
+    border:none;
+}
+
+/*PAGE AVEC COMMENTAIRES*/
+
+#comment{
+    max-width: 60%;
+    min-height: 50px;
+    margin:10px auto;
+    background-color: #aa10bd;
+    text-align: center;
+    padding-top: 30px;
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: 20px;
+}
+
+#buttonPublishComments{
+    font-family: cursive, verdana, sans-serif;
+    padding: 4px;
+    font-size: 20px;
+    background-color:black;
+    color: white;
+    border-radius:6px;
+    box-shadow:1px 1px 3px #aaa;
+    border:none;
+    margin-left: 10px;
+}
+
+#comments{
+    max-width: 60%;
+    min-height: 50px;
+    margin:10px auto;
+    max-width: 60%;
+    min-height: 100px;
+    margin:10px auto;
+	background-color:#f5f5f5;
+	border-radius:2px;
+	width:80%;
+	border:1px solid #ccc;
+    box-shadow:1px 1px 3px #999;
+    line-height: 30px;
+
+}
+
+.comments_content{
+    border-bottom: 5px solid  #aa10bd;
+    color: black;
+    padding: 10px;
+}
+
+
+
+/* LE FOOTER */
+#bandeau_bas{
+    min-height: 100px;
+    width: 100%;
+    background-color: black;
+    border-top: 5px solid  #aa10bd;
+}
+
+
+
+/*Partie Responsive*/
+
+
+@media screen and (max-width: 1024px){
+    
+/*MENU*/
+#bandeau{  
+    display: inline-block;  
+    text-align: center;   
+    padding: 20px;
+}
+
+#logo{
+    margin-bottom: 10px;
+    
+}
+
+#menu_principal{
+    width:50%;  
+    margin: 0 auto;
+   /* margin-left: 130px;*/
+    margin-bottom: 10px;
+}
+
+.boutons_menu{
+    padding: 5px;
+    font-size: 15px;
+    border-radius:6px;
+    box-shadow:1px 1px 3px #aaa;
+    border:none;  
+}
+
+/*AFFICHAGE DES EVENEMENTS*/
+.events_page_contenu{
+    max-width: 80%;
+}
+
+/*METTRE COMMENTS*/
+#comment{
+    padding-bottom: 20px;
+    max-width: 80%;
+}
+
+#buttonPublishComments{
+    margin-top:10px;
+}
+/*AFFICHER DES COMMENTS*/
+#comments{
+    max-width: 80%;
+}
+/*PUBLIER COMMENTS*/
+#blockPutEvent{
+    columns : auto;
+    text-align:center;
+}
+
+#publish{  
+    padding: 5px;
+    font-size: 15px;
+        
+}
+/*PAGE CONNEXION*/
+#page_formulaire_connexion{
+    width: 100%;
+    background-color: green;
+    
+    
+}
+
+#imgConnection{
+ width: 100%;
+ background-color: red;
+}
+ #blockNicknamePassSubmit{
+    padding-top: 0%;
+    width: 100%;
+    
+}
+#formulaire_connexion{
+    width: 100%;
+display: inline-block;   
+}
+
+
+}
+
+
+
+
